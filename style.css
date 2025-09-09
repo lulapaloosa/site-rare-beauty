@@ -213,7 +213,7 @@
   
   header.scrolled {
     background: #b52b6f;
-    transition: background 0.4s ease;
+    transition: 0.4s ease;
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   }
   
@@ -227,5 +227,54 @@
       flex-direction: column;
       gap: 1rem;
     }
+  }
+  .about {
+    padding: 80px 20px;
+    max-width: 100%;
+    margin: 0;
+    text-align: left;
+    line-height: 1.8;
+    background: url("img/selena.jpg") center/cover no-repeat;
+    color: #fff; /* texto branco para contraste */
+    position: relative;
+  }
+  
+  .about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(247, 131, 201, 0.6); /* overlay rosado translúcido */
+    z-index: 1;
+  }
+  
+  .about h2, 
+  .about p {
+    position: relative;
+    z-index: 2; /* garante que o texto fica por cima do overlay */
+  }
+  
+  .about h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  
+  
+  .about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #a83279; /* tom rosado inspirado na Rare Beauty */
+  }
+  
+  .about p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #333;
   }
   
